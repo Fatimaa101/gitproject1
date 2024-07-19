@@ -1,0 +1,365 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+}
+
+
+body {
+    --sb-track-color: #232E33;
+    --sb-thumb-color: #000000;
+    --sb-size: 16px;
+  
+    scrollbar-color: var(--sb-thumb-color) 
+                     var(--sb-track-color);
+  }
+  
+  body::-webkit-scrollbar {
+    width: var(--sb-size) 
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 5px;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 5px;
+    border: 1px solid #232E33;
+    }
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar-brand {
+    font-size: 30px;
+    font-family: 'Impact';
+    text-align: left;
+    padding-left: 25px;
+    letter-spacing: 1px;
+}
+
+.navbar nav {
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: background-color 0.5s;
+}
+
+.nav-link a {
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Palanquin' Dark;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+.navbar-nav {
+
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-link:hover {
+    background-color: rgba(106, 57, 183, 0.363);
+    color: white;
+}
+
+.container_1 {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding-top: 50px;
+    margin-left: 30px;
+    width: 300px;
+    height: 1050px;
+    background: linear-gradient(141deg, black 1%, #0E0E0E 14%, #131313 57%, #1A1A1A 100%);
+    border-radius: 0px 0px 300px 300px;
+    background: linear-gradient(136deg, #000 -13.44%, #0E0E0E -0.5%, #131313 42.22%, #1A1A1A 85.56%);
+
+}
+
+.sub_heading1 {
+    background-color: rgb(246, 186, 195);
+    text-align: center;
+    border-radius: 10px;
+    width: 170px;
+    margin-left: 60px;
+    margin-top: 25px;
+}
+
+.sub_heading1 h2 {
+    font-size: 17px;
+    font-family: 'Inter';
+    font-weight: 700;
+}
+
+.info h4,
+p {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.info1 {
+    display: flex;
+
+}
+
+.info h4 {
+    padding-top: 35px;
+    color: #F7CA18;
+    font-size: 17px;
+    font-family: 'Domine';
+    font-weight: 400;
+
+}
+
+.info p {
+    font-size: 16px;
+    color: white;
+    padding-left: 60px;
+    padding-top: 35px;
+    font-family: 'Domine';
+}
+
+.info2 {
+    display: flex;
+}
+
+.info2 p {
+    padding-left: 18px;
+}
+
+.info3 {
+    display: flex;
+}
+
+.info3 p {
+    padding-left: 23px;
+}
+
+.info4 {
+    display: flex;
+}
+
+.info4 p {
+    padding-left: 18px;
+}
+
+.info5 {
+    display: flex;
+    padding-top: 20px;
+}
+
+.info5 p {
+    padding-left: 57px;
+}
+
+.info6 {
+    display: flex;
+}
+
+.info6 p {
+    padding-left: 18px;
+}
+
+hr {
+    color: white;
+    height: 5px;
+}
+
+
+
+/* Blockquote main style */
+.blockquote {
+    font-family: 'Barlow Condensed', sans-serif;
+    position: relative;
+    max-width: 620px;
+    margin: 80px auto;
+    align-self: center;
+}
+
+/* Blockquote header */
+.blockquote h1 {
+    font-size: 32px;
+    font-weight: normal;
+    line-height: 1;
+    margin: 0;
+    border: 2px solid white;
+    border: solid 2px;
+    border-radius: 20px;
+    padding: 25px;
+}
+
+/* Blockquote right double quotes */
+.blockquote h1:after {
+    content: "";
+    position: absolute;
+    border: 2px solid rgb(247, 203, 4);
+    border-radius: 0 50px 0 0;
+    width: 60px;
+    height: 60px;
+    bottom: -62px;
+    left: 50px;
+    border-bottom: none;
+    border-left: none;
+    z-index: 3;
+}
+
+.blockquote h1:before {
+    content: "";
+    position: absolute;
+    width: 80px;
+    border: 6px solid black;
+    bottom: -3px;
+    left: 50px;
+    z-index: 2;
+}
+
+/* FAQs :CSS */
+.faq_area {
+    position: relative;
+    z-index: 1;
+    background-color: black;
+}
+
+.faq-accordian {
+    position: relative;
+    z-index: 1;
+}
+
+.faq-accordian .card {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 1.5rem;
+}
+
+.faq-accordian .card:last-child {
+    margin-bottom: 0;
+}
+
+.faq-accordian .card .card-header {
+    background-color: rgb(31, 30, 30);
+    padding: 0;
+    border-bottom-color: #ebebeb;
+}
+
+.faq-accordian .card .card-header h6 {
+    cursor: pointer;
+    padding: 1.75rem 2rem;
+    color: pink;
+    font-weight: 500;
+    font-family: 'Domine';
+    font-size: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.faq-accordian .card .card-header h6 span {
+    font-size: 1.5rem;
+}
+
+.faq-accordian .card .card-header h6.collapsed {
+    color: pink;
+}
+
+.faq-accordian .card .card-header h6.collapsed span {
+    transform: rotate(-180deg);
+}
+
+.faq-accordian .card .card-body {
+    padding: 1.75rem 2rem;
+    background-color: rgb(21, 20, 20);
+    color: white;
+    font-family: 'Domine';
+    font-size: 20px;
+}
+
+.faq-accordian .card .card-body p:last-child {
+    margin-bottom: 0;
+}
+
+.wantpink {
+    color: pink;
+}
+
+/* CARDSSSS CSSS */
+
+
+.card {
+    /* height: 500px; */
+    /* margin: 50px; */
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+}
+
+.intro {
+    height: 70px;
+    /* width: 350px; */
+    /* padding: 6px; */
+    box-sizing: border-box;
+    position: absolute;
+    background-color: rgba(4, 4, 4, 0.5);
+    color: white;
+    /* bottom: 200px; */
+    transition: .5s;
+}
+
+.had {
+    margin: 10px;
+    font-size: 30px;
+}
+
+.para {
+    /* font-size: 20px; */
+    margin: 20px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+span {
+    font-weight: bold;
+}
+
+.card:hover {
+    cursor: pointer;
+}
+
+.card:hover .intro {
+    height: 230px;
+    bottom: 200px;
+    /* background: black; */
+}
+
+.card:hover p {
+    opacity: 1;
+    visibility: visible;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+    /* rotate(-3deg) ---- it will rotate your image  */
+}
